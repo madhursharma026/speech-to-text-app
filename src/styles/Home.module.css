@@ -1,0 +1,77 @@
+.containerWidth {
+  min-height: 100vh;
+  background-color: #0b3d2e;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+.box {
+  max-width: 700px;
+  width: 100%;
+}
+
+.fileRow {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.chooseBtn {
+  background-color: #f2854c;
+  color: white;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  font-weight: 600;
+  user-select: none;
+}
+
+.chooseBtn.disabled {
+  cursor: not-allowed;
+}
+
+.fileInput {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  font-size: 14px;
+  color: #333;
+  background-color: white;
+}
+
+.uploadBtn {
+  margin-left: 15px;
+  background-color: #f2854c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+
+.uploadBtn.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.textarea {
+  width: 100%;
+  margin-top: 10px;
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: none;
+  resize: none;
+  background-color: white;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), inset 0 1px 3px rgba(255, 255, 255, 0.7);
+}
