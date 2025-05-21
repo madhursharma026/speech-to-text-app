@@ -108,9 +108,9 @@ export default function Home() {
         <div className={style.fileRow}>
           <label
             htmlFor="file-upload"
-            className={`${style.chooseBtn} ${loading ? 'disabled' : ''}`}
+            className={`${style.chooseBtn} ${loading ? style.disabled : ''}`}
           >
-            CHOOSE FILE
+            {file ? 'CHOSEN FILE' : 'CHOOSE FILE'}
           </label>
           <input
             id="file-upload"
@@ -124,7 +124,7 @@ export default function Home() {
             onClick={uploadAndTranscribe}
             disabled={loading || !file}
             className={`${style.uploadBtn} ${
-              loading || !file ? 'disabled' : ''
+              loading || !file ? style.disabled : ''
             }`}
           >
             {loading ? 'UPLOADING...' : 'UPLOAD'}
