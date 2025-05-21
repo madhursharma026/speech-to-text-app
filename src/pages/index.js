@@ -12,10 +12,12 @@ export default function Home() {
 
   const animateText = (fullText) => {
     let index = 0
+    let currentText = ''
     setAnimatedText('')
     const interval = setInterval(() => {
       if (index < fullText.length) {
-        setAnimatedText((prev) => prev + fullText.charAt(index))
+        currentText += fullText.charAt(index)
+        setAnimatedText(currentText)
         index++
       } else {
         clearInterval(interval)
